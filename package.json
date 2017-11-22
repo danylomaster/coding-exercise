@@ -1,0 +1,14 @@
+{
+  "name": "coding-exercise",
+  "version": "1.0.0",
+  "description": "Simple coding example",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Danylo Horeiko <danylomaster@ukr.net>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}

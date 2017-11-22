@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="/problem4/css/style.css">
+</head>
+
+<body>
+  <div id="mainData" class="container">
+    <form name="mainForm" class="form-horizontal">
+      <fieldset>
+        <!-- Form Name -->
+        <legend>Simple Input Form</legend>
+
+        <!-- Text input-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="name">Name</label>
+          <div class="col-md-4">
+            <input id="name" name="name" type="text" required minlength="1" maxlength="100" pattern="^[a-zA-Z]+$">
+            <span class="error" aria-live="polite" id="nameError"></span>
+          </div>
+        </div>
+
+
+        <!-- Text input-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="address2">Address 2</label>
+          <div class="col-md-4">
+            <input id="address1" name="address1" type="text" required minlength="1" maxlength="100" pattern="^[a-zA-Z0-9 ]+$">
+            <span class="error" aria-live="polite" id="address1Error"></span>
+          </div>
+        </div>
+
+
+        <!-- Text input-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="address2">Address 2</label>
+          <div class="col-md-4">
+            <input id="address2" name="address2" type="text" minlength="0" maxlength="100" pattern="^[a-zA-Z0-9 ]+$">
+            <span class="error" aria-live="polite" id="address2Error"></span>
+          </div>
+        </div>
+
+        <!-- Text input-->
+        <div class="form-group">
+          <label for="city" class="col-md-4 control-label">City
+            <input id="city" name="city" type="text" required minlength="1" maxlength="50" pattern="^[a-zA-Z0-9 ]+$">
+            <span class="error" aria-live="polite" id="cityError"></span>
+          </label>
+        </div>
+
+        <!-- Select -->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="state">Select</label>
+          <div class="col-md-4">
+            <select id="state" name="state" class="form-control" required multiple size="2">
+              <option value="1">State 1</option>
+              <option value="2">State 2</option>
+              <option value="3">State 3</option>
+              <option value="4">State 4</option>
+              <option value="5">State 5</option>
+            </select>
+            <div>
+              <span class="error" aria-live="polite" id="stateError"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Text input-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="zip">Zip Code</label>
+          <div class="col-md-4">
+            <input id="zip" name="zip" type="text" required minlength="5" maxlength="5" pattern="\d+">
+            <span class="error" aria-live="polite" id="zipError"></span>
+          </div>
+        </div>
+        <div id="controls" class="form-group">
+          <div class="col-md-8">
+            <button name="btnOK" type="button" class="btn btn-info">OK</button>
+            <button name="btnCancel" type="button" class="btn btn-success">Cancel</button>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+  <script src="/problem4/js/main.js"></script>
+</body>
+
+</html>
